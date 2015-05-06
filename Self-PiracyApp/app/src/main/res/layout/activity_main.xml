@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/blue"
+    android:id="@+id/mainBackground">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/APPNAME"
+
+    />
+    <Button
+        android:id="@+id/StartRecordingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Begin Recording"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/getSimilar"
+        android:layout_alignRight="@+id/getSimilar"
+        android:layout_alignEnd="@+id/getSimilar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/getSimilar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Similar Sayings"
+        android:onClick="stopSpeech"
+        android:layout_below="@+id/StartRecordingButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+        <!--android:layout_alignBottom="@id/StartRecordingButton"-->
+
+
+    <Button
+        android:id="@+id/StatsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stats"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/WhatWasJustSaidTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What the User Just Said"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffffff"
+        android:maxLines = "3"
+        android:scrollbars = "horizontal"
+        android:maxWidth="250dp"
+        android:minWidth="350dp"
+        android:minHeight="80dp" />
+
+    <TextView
+        android:id="@+id/WhatTheUserJustSaidLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="What you Just Said:"
+        android:layout_above="@+id/WhatWasJustSaidTextBox"
+        android:layout_alignLeft="@+id/WhatWasJustSaidTextBox"
+        android:layout_alignStart="@+id/WhatWasJustSaidTextBox"
+        android:paddingTop="20dp"/>
+
+    <TextView
+        android:id="@+id/SimilarChunksLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Similar Sayings"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/WhatWasJustSaidTextBox"
+        android:layout_alignStart="@+id/WhatWasJustSaidTextBox"
+        android:layout_alignLeft="@+id/WhatWasJustSaidTextBox"/>
+
+    <TextView
+        android:id="@+id/SimilarSayingsTextbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#ffffffff"
+        android:minWidth="350dp"
+        android:minHeight="100dp"
+        android:text="similar sayings"
+        android:layout_below="@+id/SimilarChunksLabel"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/nextButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@+id/SimilarSayingsTextbox"
+        android:layout_alignRight="@+id/WhatWasJustSaidTextBox"
+        android:layout_alignEnd="@+id/WhatWasJustSaidTextBox"
+        android:maxHeight="25dp"/>
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="date"
+        android:layout_alignTop="@+id/nextButton"
+        android:layout_alignLeft="@+id/SimilarSayingsTextbox"
+        android:layout_alignStart="@+id/SimilarSayingsTextbox"
+        android:background="#ffd1d1d1"
+        android:minWidth="300dp"
+        android:layout_alignRight="@+id/StatsButton"
+        android:layout_alignEnd="@+id/StatsButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/WarningText"
+        android:layout_above="@+id/SimilarSayingsTextbox"
+        android:layout_alignRight="@+id/WhatWasJustSaidTextBox"
+        android:layout_alignEnd="@+id/WhatWasJustSaidTextBox" />
+
+
+</RelativeLayout>

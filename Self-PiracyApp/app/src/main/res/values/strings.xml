@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Self-Plagiarism App</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <color name="blue">#46b1f9</color>
+    <string name="APPNAME">Self-Plagiarism App</string>
+    <string name="title_activity_stats">StatsActivity</string>
+    <string name="title_activity_most_common_words">MostCommonWordsActivity</string>
+</resources>
