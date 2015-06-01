@@ -7,3 +7,5 @@ this comes from just hearing friends and family repeat themselves. I wanted to c
 individuals to know if what they are saying is a repeat of something they have already said in the past, thus, allowing
 them to abort the particular idea or topic they are speaking of, or simply be aware that what they are saying now
 has been said before in the past.
+
+Youtube Demo: https://www.youtube.com/watch?v=z2crE9ohi2o
